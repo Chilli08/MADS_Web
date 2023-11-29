@@ -183,5 +183,32 @@ class Prato extends Model
 
         return $this;
     }
+
+   /* public static function all() {
+        // Conexão com o banco de dados
+        $conexao = new Conexao(); // Supondo uma classe de conexão 
+    
+        // Query para buscar todos os pratos
+        $query = "SELECT * FROM pratos"; // Substitua 'tabela_de_pratos' pelo nome correto da sua tabela
+    
+        // Executar a query
+        $resultado = $conexao->query($query);     
+        // Verificar se a query foi bem-sucedida
+        if ($resultado) {
+            // Inicializar um array para armazenar os pratos
+            $pratos = [];
+    
+            // Iterar sobre os resultados e armazenar na variável $pratos
+            while ($prato = $resultado->fetch_assoc()) {
+                $pratos[] = $prato;
+            }
+    
+            return $pratos;
+        } else {
+            // Se a query falhou, retorne null ou trate o erro de acordo com sua lógica
+            return null;
+        }
+    } */
+    
 }
     
